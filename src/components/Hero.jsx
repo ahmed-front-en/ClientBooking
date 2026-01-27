@@ -5,7 +5,23 @@ import hotel_3 from "../assets/hotel_3.jpg";
 function Hero() {
   return (
     <div
-      className=" relative flex flex-col items-center justify-center p-10 text-white bg-cover bg-center bg-no-repeat h-screen"
+      
+      className="
+  relative
+  flex
+  flex-col
+  items-center
+  justify-center
+  pt-30
+  md:pt-50
+  p-10
+  text-white
+  bg-cover
+  bg-center
+  bg-no-repeat
+  min-h-screen
+"
+
       style={{ backgroundImage: `url(${hotel_3})` }}
   >
 
@@ -47,7 +63,7 @@ function Hero() {
       <input
         type="text"
         placeholder="Enter your name"
-        className="w-full p-2 text-sm border rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+        className=" w-full p-2 text-sm text-orange-400 border rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
       />
     </div>
 
@@ -59,7 +75,7 @@ function Hero() {
       <input
         type="email"
         placeholder="Enter your email"
-        className="w-full p-2 text-sm border rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+        className="text-orange-400 w-full p-2 text-sm border rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
       />
     </div>
 
@@ -71,7 +87,7 @@ function Hero() {
       <input
         type="tel"
         placeholder="Enter your phone"
-        className="w-full p-2 text-sm border rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+        className="text-orange-400 w-full p-2 text-sm border rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
       />
     </div>
 
@@ -82,7 +98,7 @@ function Hero() {
       </label>
       <input
         type="date"
-        className="w-full p-2 text-sm border rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
+        className=" text-orange-400 w-full p-2 text-sm border rounded-lg focus:outline-none focus:ring-1 focus:ring-blue-500"
       />
     </div>
 

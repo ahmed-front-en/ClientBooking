@@ -2,6 +2,10 @@ import React from 'react'
 import Navbar from './components/Navbar'
 import Home from './pages/Home';
 import { Route, Routes, useLocation } from 'react-router-dom';
+import AllHotels from './pages/AllHotels';
+import RoomDetails from './pages/RoomDetails';
+
+
 
 function App() {
 
@@ -16,6 +20,8 @@ function App() {
 
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/hotels' element={<AllHotels />} />
+        <Route path='/room/:id' element={<RoomDetails />} />
      </Routes>
      </div>
    </>

@@ -828,7 +828,7 @@ function AllHotels() {
                 {/* Image */}
                 <div
                   className="h-48 overflow-hidden cursor-pointer"
-                  onClick={() => navigate(`/room/${encodeId(room.id)}`)}
+                  onClick={() => navigate(`/room/${(room.id)}`)}
                 >
                   <img
                     src={room.image}

@@ -195,13 +195,13 @@ function RoomDetails() {
 
   return (
     <div className="pt-60 pb-24 px-4">
-      <div className="max-w-5xl mx-auto bg-white rounded-2xl shadow-lg overflow-hidden">
+      <div className="max-w-3xl mx-auto bg-white rounded-3xl shadow-lg overflow-hidden">
 
         {/* IMAGE */}
         <img
           src={room.image}
           alt={room.name}
-          className="w-full h-[300px] sm:h-[380px] object-cover"
+          className="w-full h-[250] sm-h-[300] object-cover"
         />
 
         <div className="p-6 sm:p-8 space-y-8">
@@ -318,7 +318,7 @@ function RoomDetails() {
                 loading="lazy"
                 src={`https://www.google.com/maps?q=${encodeURIComponent(
                   room.location
-                )}&output=embed`}
+                )}&output=embed `}
               />
             </div>
           </div>

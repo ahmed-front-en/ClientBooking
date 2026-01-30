@@ -4,6 +4,8 @@ import Home from './pages/Home';
 import { Route, Routes, useLocation } from 'react-router-dom';
 import AllHotels from './pages/AllHotels';
 import RoomDetails from './pages/RoomDetails';
+import MyBooking from './pages/MyBooking';
+import Layout from '../src/pages/dashboard/Layout';
 
 
 
@@ -22,6 +24,8 @@ function App() {
         <Route path='/' element={<Home />} />
         <Route path='/hotels' element={<AllHotels />} />
         <Route path='/room/:id' element={<RoomDetails />} />
+        <Route path='/My-Booking' element={<MyBooking />} />
+        <Route path='/dashboard' element={<Layout/>}></Route>
      </Routes>
      </div>
    </>

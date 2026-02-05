@@ -157,7 +157,7 @@ const Navbar = () => {
         }`}
       >
         <button
-          className="!bg-white !text-black absolute top-4 right-4"
+          className="bg-white! text-black! absolute top-4 right-4"
           onClick={() => setIsMenuOpen(false)}
         >
           <svg

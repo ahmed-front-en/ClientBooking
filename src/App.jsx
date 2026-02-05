@@ -5,7 +5,10 @@ import { Route, Routes, useLocation } from 'react-router-dom';
 import AllHotels from './pages/AllHotels';
 import RoomDetails from './pages/RoomDetails';
 import MyBooking from './pages/MyBooking';
-import Layout from '../src/pages/dashboard/Layout';
+import Layout from './pages/dashboardHotel/Layout';
+import Dashboard from './pages/dashboardHotel/dashboard';
+import AddHotel from './pages/dashboardHotel/AddHotel';
+import HotelList from './pages/dashboardHotel/HotelList';
 
 
 
@@ -25,7 +28,12 @@ function App() {
         <Route path='/hotels' element={<AllHotels />} />
         <Route path='/room/:id' element={<RoomDetails />} />
         <Route path='/My-Booking' element={<MyBooking />} />
-        <Route path='/dashboard' element={<Layout/>}></Route>
+        <Route path='/dashboard' element={<Layout/>}>
+        <Route index element={<Dashboard/>}/>
+        <Route path='/dashboard/addhotel' element={<AddHotel />} />
+        <Route path='/dashboard/hotellist' element={<HotelList />} />
+       
+        </Route>
      </Routes>
      </div>
    </>

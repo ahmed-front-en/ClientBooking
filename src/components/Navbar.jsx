@@ -183,7 +183,7 @@ const Navbar = () => {
         ))}
 
         {user && (
-          <button className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
+          <button onClick={() => navigate("/dashboard")} className="border px-4 py-1 text-sm font-light rounded-full cursor-pointer transition-all">
             Dashboard
           </button>
         )}
